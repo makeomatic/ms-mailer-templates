@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta name="viewport" content="width=device-width" />
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>Welcome to Cappasity</title>
+  <link href="../css/cappasity-new.css" media="all" rel="stylesheet" type="text/css" inline />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+</head>
+<body itemscope itemtype="http://schema.org/EmailMessage">
+<table class="body-wrap">
+  <tr>
+    <td></td>
+    <td class="container">
+      <div class="content">
+        <table class="main" width="100%" cellpadding="0" cellspacing="0" itemprop="action" itemscope itemtype="http://schema.org/InformAction">
+          <tr>
+            <td class="content-wrap">
+              <meta itemprop="name" content="Welcome Email"/>
+              <table width="100%" cellpadding="0" cellspacing="0">
+                <!-- @include _partials/cpst-logo.html -->
+                <tr>
+                  <td class="text">
+                    <p>
+                      Hi{{#if name}} {{ name }}{{/if}},
+                    </p>
+                    <p>
+                      We are excited to have you on board the Cappasity platform and know that you will enjoy it!
+                    </p>
+                    <h5>
+                      3DShot app
+                    </h5>
+                    <p class="last">
+                      Easily create and share interactive 3D Views and record
+                      3D Reviews of any object. Use this content anywhere you
+                      want: post it on social media, add to listings on
+                      marketplaces, or embed it into your own website.
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="image-block" itemprop="handler" itemscope itemtype="http://schema.org/HttpActionHandler">
+                    <a href="https://youtu.be/7kA_IhUKaK0" itemprop="url">
+                      <img alt="3dShot app video" src="https://cdn.cappasity.com/mail/cpst-3dshot.jpg" width="539" height="270">
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td itemprop="handler" itemscope itemtype="http://schema.org/HttpActionHandler">
+                    <a href="https://apps.apple.com/us/app/3dshot/id1521658237" itemprop="url">
+                     <img alt="3dshot appstore link button" src="https://cdn.cappasity.com/mail/cpst-3dshot-appstore.png" width="142" height="47">
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="text">
+                    <h5>
+                      Easy 3D Scan&trade; for professional studios
+                    </h5>
+                    <p class="last">
+                      With the <strong>Easy 3D Scan&trade;</strong> desktop application,
+                      you can easily create interactive 3D Views of any items and showcase
+                      them anywhere you want: websites, mobile apps, social media, AR and
+                      more. Ease 3D Scan enables you to create content, while the Cappasity
+                      platform allows you to embed and analyze it.
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="image-block" itemprop="handler" itemscope itemtype="http://schema.org/HttpActionHandler">
+                    <a href="https://youtu.be/5S4iuhJlktE" itemprop="url">
+                      <img alt="Easy 3DScan app" src="https://cdn.cappasity.com/mail/cpst-3dscan.jpg" width="539" height="270">
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td itemprop="handler" itemscope itemtype="http://schema.org/HttpActionHandler">
+                    <a href="https://cappasity.com/easy-3d-scan/" class="btn primary" itemprop="url">
+                      Download software
+                    </a><a href="https://cdn.cappasity.com/updates/easy3dscan_videosample.zip" class="btn secondary">
+                      Download sample video
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="support-block">
+                    If you need help with anything, please contact us 24/7 via
+                    live support on our website or at <a href="mailto:{{ support }}">
+                      {{ support }}
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="muted">
+                    Best,<br>
+                    Cappasity Team
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+        <!-- @include _partials/cpst-footer.html -->
+      </div>
+    </td>
+    <td></td>
+  </tr>
+</table>
+</body>
+</html>

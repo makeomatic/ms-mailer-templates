@@ -16,9 +16,13 @@
   				<table class="main" width="100%" cellpadding="0" cellspacing="0" itemprop="action" itemscope itemtype="http://schema.org/ConfirmAction">
   					<tr>
   						<td class="content-wrap">
-  							<meta itemprop="name" content="Confirm Email"/>
+  							<meta itemprop="name" content="Activation Email"/>
   							<table width="100%" cellpadding="0" cellspacing="0">
-                  <!-- @include _partials/cpst-logo.html -->
+                  {{#if from3dShot}}
+                    <!-- @include _partials/cpst-3dshot-logo.html -->
+                  {{else}}
+                    <!-- @include _partials/cpst-logo.html -->
+                  {{/if}}
                   <tr>
                     <td class="content-block header aligncenter bg-success">
                       <img src="https://cdn.cappasity.com/mail/cpst-activate.png" width="96" height="96" alt="activate icon" />
@@ -32,13 +36,26 @@
                         Hi{{#if name}} {{ name }}{{/if}},
                       </p>
                       <p>
-                        Thank you for signing up to Cappasity. Please confirm your email address to activate your account.
+                        {{#if from3dShot}}
+                          Thank you for signing up to the 3DShot app by Cappasity.
+                          To complete the registration, activate your Cappasity
+                          account where all your 3D content will be saved.
+                        {{else}}
+                          Thank you for signing up to Cappasity. Please confirm your
+                          email address to activate your account.
+                        {{/if}}
                       </p>
   									</td>
   								</tr>
   								<tr>
   									<td class="content-block" itemprop="handler" itemscope itemtype="http://schema.org/HttpActionHandler">
-  										<a href="{{ link  }}{{ qs }}" class="btn-primary" itemprop="url">Activate email address</a>
+  										<a href="{{ link  }}{{ qs }}" class="btn primary" itemprop="url">
+                        {{#if from3dShot}}
+                          Activate your account
+                        {{else}}
+                          Activate email address
+                        {{/if}}
+                      </a>
   									</td>
   								</tr>
   								<tr>
