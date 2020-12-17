@@ -165,6 +165,7 @@ h5 {
 
 p {
   margin-bottom: 15px;
+  color: #484848;
 }
 
 p.last {
@@ -267,6 +268,7 @@ a:hover {
 
 .strong {
   font-weight: 700;
+  color: #191919;
 }
 
 .text {
