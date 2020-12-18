@@ -33,7 +33,7 @@ exports.clean = del.bind(null, [paths.dist, paths.preview]);
 exports.connect = function previewServer() {
   connect.server({
     livereload: true,
-    root: 'preview',
+    root: 'build',
   });
 
   return watch([paths.filesToMove, paths.templates], exports.defaultTask);

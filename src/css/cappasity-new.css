@@ -181,7 +181,6 @@ ul, ol {
   font-weight: normal;
 }
 p li, ul li, ol li {
-  margin-left: 5px;
   list-style-position: inside;
 }
 
