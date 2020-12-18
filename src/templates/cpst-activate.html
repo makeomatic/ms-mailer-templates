@@ -68,7 +68,11 @@
   						</td>
   					</tr>
   				</table>
-          <!-- @include _partials/cpst-footer.html -->
+          {{#if from3dShot}}
+            <!-- @include _partials/cpst-3dshot-footer.html -->
+          {{else}}
+            <!-- @include _partials/cpst-footer.html -->
+          {{/if}}
         </div>
   		</td>
   		<td></td>
