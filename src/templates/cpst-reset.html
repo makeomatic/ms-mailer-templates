@@ -3,7 +3,7 @@
 <head>
   <meta name="viewport" content="width=device-width" />
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-  <title>Password Reset</title>
+  <title>{{t "cpst-emails:|Password Reset"}}</title>
   <link href="../css/cappasity-new.css" media="all" rel="stylesheet" type="text/css" inline />
 </head>
 <body itemscope itemtype="http://schema.org/EmailMessage">
@@ -21,34 +21,33 @@
                 <tr>
                   <td class="content-block header aligncenter bg-error">
                     <img src="https://cdn.cappasity.com/mail/cpst-reset.png" width="96" height="96" alt="Header logo" />
-                    Reset your Cappasity password
+                    {{t "cpst-emails:|Reset your Cappasity password"}}
                   </td>
                 </tr>
                 <tr><td class="content-block"></td></tr>
                 <tr>
                   <td class="text">
                     <p>
-                      Hi{{#if name}} {{ name }}{{/if}},
+                      {{t "cpst-emails:|Hi"}}{{#if name}} {{ name }}{{/if}},
                     </p>
                     <p>
-                      Someone requested that the password for your Cappasity account be reset.
+                      {{t "cpst-emails:|Someone requested that the password for your Cappasity account be reset."}}
                     </p>
                   </td>
                 </tr>
                 <tr>
                   <td class="content-block" itemprop="handler" itemscope itemtype="http://schema.org/HttpActionHandler">
-                    <a href="{{ link }}{{ qs }}" class="btn primary" itemprop="url">Reset password</a>
+                    <a href="{{ link }}{{ qs }}" class="btn primary" itemprop="url">{{t "cpst-emails:|Reset password"}}</a>
                   </td>
                 </tr>
                 <tr>
                   <td class="text content-block">
-                    If you have not requested the password reset, ignore this email or contact us by replying to this email. Your password won't change until you create a new password.
+                    {{t "cpst-emails:|If you have not requested the password reset, ignore this email or contact us by replying to this email. Your password won't change until you create a new password."}}
                   </td>
                 </tr>
                 <tr>
                   <td class="muted">
-                    Best,<br>
-                    Cappasity Team
+                    {{t "cpst-emails:|Best,<br>Cappasity Team"}}
                   </td>
                 </tr>
               </table>

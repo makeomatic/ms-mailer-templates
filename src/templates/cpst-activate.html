@@ -3,7 +3,7 @@
 <head>
   <meta name="viewport" content="width=device-width" />
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-  <title>Activate Your Account</title>
+  <title>{{t "cpst-emails:|Activate Your Account"}}</title>
   <link href="../css/cappasity-new.css" media="all" rel="stylesheet" type="text/css" inline />
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
 </head>
@@ -26,23 +26,20 @@
                   <tr>
                     <td class="content-block header aligncenter bg-success">
                       <img src="https://cdn.cappasity.com/mail/cpst-activate.png" width="96" height="96" alt="activate icon" />
-                      Activate your account
+                      {{t "cpst-emails:|Activate your account"}}
                     </td>
                   </tr>
                   <tr><td class="content-block"></td></tr>
   								<tr>
   									<td class="text">
                       <p>
-                        Hi{{#if name}} {{ name }}{{/if}},
+                        {{t "cpst-emails:|Hi"}}{{#if name}} {{ name }}{{/if}},
                       </p>
                       <p>
                         {{#if from3dShot}}
-                          Thank you for signing up to the 3DShot app by Cappasity.
-                          To complete the registration, activate your Cappasity
-                          account where all your 3D content will be saved.
+                          {{t "cpst-emails:|Thank you for signing up to the 3DShot app by Cappasity. To complete the registration, activate your Cappasity account where all your 3D content will be saved."}}
                         {{else}}
-                          Thank you for signing up to Cappasity. Please confirm your
-                          email address to activate your account.
+                          {{t "cpst-emails:|Thank you for signing up to Cappasity. Please confirm your email address to activate your account."}}
                         {{/if}}
                       </p>
   									</td>
@@ -51,17 +48,16 @@
   									<td class="content-block" itemprop="handler" itemscope itemtype="http://schema.org/HttpActionHandler">
   										<a href="{{ link  }}{{ qs }}" class="btn primary" itemprop="url">
                         {{#if from3dShot}}
-                          Activate your account
+                          {{t "cpst-emails:|Activate your account"}}
                         {{else}}
-                          Activate email address
+                          {{t "cpst-emails:|Activate email address"}}
                         {{/if}}
                       </a>
   									</td>
   								</tr>
   								<tr>
   									<td class="muted">
-  										Best,<br>
-                      Cappasity Team
+  										{{t "cpst-emails:|Best,<br>Cappasity Team"}}
   									</td>
   								</tr>
   							</table>

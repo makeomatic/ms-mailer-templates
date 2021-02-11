@@ -3,7 +3,7 @@
 <head>
   <meta name="viewport" content="width=device-width" />
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-  <title>Welcome to Cappasity</title>
+  <title>{{t "cpst-emails:|Welcome to Cappasity"}}</title>
   <link href="../css/cappasity-new.css" media="all" rel="stylesheet" type="text/css" inline />
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
 </head>
@@ -22,23 +22,20 @@
                 <tr>
                   <td class="text">
                     <p>
-                      Hi{{#if name}} {{ name }}{{/if}},
+                      {{t "cpst-emails:|Hi"}}{{#if name}} {{ name }}{{/if}},
                     </p>
                     <p>
-                      We are excited to have you on board the Cappasity platform and know that you will enjoy it!
+                      {{t "cpst-emails:|We are excited to have you on board the Cappasity platform and know that you will enjoy it!"}}
                     </p>
                     <p class="last">
-                      With us, you can easily create interactive 3D Views of any
-                      items and showcase them anywhere you want. You can also
-                      record a 3D Review of any product and share it on social
-                      media or add to a marketplace listing.
+                      {{t "cpst-emails:|With us, you can easily create interactive 3D Views of any items and showcase them anywhere you want. You can also record a 3D Review of any product and share it on social media or add to a marketplace listing."}}
                     </p>
                   </td>
                 </tr>
                 <tr>
                   <td>
                     <h5 class="last">
-                      How to create 3D Views and record 3D Reviews
+                      {{t "cpst-emails:|How to create 3D Views and record 3D Reviews"}}
                     </h5>
                   </td>
                 </tr>
@@ -50,14 +47,13 @@
                 <tr>
                   <td itemprop="handler" itemscope itemtype="http://schema.org/HttpActionHandler">
                     <a href="https://3dshot.io/how-to" class="btn primary" itemprop="url">
-                      Find out
+                      {{t "cpst-emails:|Find out"}}
                     </a>
                   </td>
                 </tr>
                 <tr>
                   <td class="text support-block">
-                    If you need help with anything, please contact us 24/7 via
-                    live support on our website or at <a href="mailto:{{ support }}">
+                    {{t "cpst-emails:|If you need help with anything, please contact us 24/7 via live support on our website or at"}} <a href="mailto:{{ support }}">
                     {{ support }}
                   </a>
                   </td>
