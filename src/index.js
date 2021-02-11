@@ -10,6 +10,7 @@ const Errors = require('common-errors');
 const hbs = require('handlebars');
 const fs = require('fs');
 const path = require('path');
+const i18n = require('./i18n');
 
 const templateDirectory = path.resolve(__dirname, '../build/templates');
 const ext = '.html';
@@ -23,7 +24,7 @@ fs.readdirSync(templateDirectory)
   });
 
 // public API
-module.exports = function renderEmailTemplate(templateName, context, opts = {}) {
+function renderEmailTemplate(templateName, context, opts = {}) {
   const template = templates[templateName];
   if (!template) {
     return Promise.reject(new Errors.NotFoundError(templateName));
@@ -34,6 +35,20 @@ module.exports = function renderEmailTemplate(templateName, context, opts = {}) 
   }
 
   return Promise.try(function tryRendering() {
-    return template(context, opts);
+    const fixedT = i18n.getFixedT(context.lng);
+
+    return template(context, {
+      ...opts,
+      helpers: {
+        ...opts.helpers,
+        t(key, attributes) {
+          return new hbs.SafeString(fixedT(key, attributes.hash));
+        },
+      },
+    });
   });
-};
+}
+
+renderEmailTemplate.translate = i18n.t.bind(i18n);
+
+module.exports = renderEmailTemplate;

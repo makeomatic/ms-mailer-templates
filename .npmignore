@@ -34,3 +34,6 @@ test
 src
 preview
 images
+
+# i18n service dirs
+i18n-parsed

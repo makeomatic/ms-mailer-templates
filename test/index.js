@@ -15,7 +15,7 @@ describe('TemplateSuite', function testSuite() {
   });
 
   it('should reject promise on invalid context', function test() {
-    return this.render('cpst-activate', null)
+    return this.render('reset', null)
       .reflect()
       .then(function inspectError(promise) {
         expect(promise.isRejected()).to.be.eq(true);
@@ -24,22 +24,22 @@ describe('TemplateSuite', function testSuite() {
   });
 
   it('should return rendered template on valid context and existing template', function test() {
-    return this.render('cpst-activate', { username: 'vasya', link: 'http://localhost', qs: '?test=ok' })
+    return this.render('reset', { username: 'vasya', link: 'http://localhost', qs: '?test=ok' })
       .reflect()
       .then(function inspectError(promise) {
         expect(promise.isRejected()).to.be.eq(false);
         expect(promise.isFulfilled()).to.be.eq(true);
-        expect(promise.value()).to.match(/Activate email address/m);
+        expect(promise.value()).to.match(/change your password/m);
       });
   });
 
   it('should return rendered template on valid context and existing template with missing username', function test() {
-    return this.render('cpst-activate', { link: 'http://localhost', qs: '?test=ok' })
+    return this.render('reset', { link: 'http://localhost', qs: '?test=ok' })
       .reflect()
       .then(function inspectError(promise) {
         expect(promise.isRejected()).to.be.eq(false);
         expect(promise.isFulfilled()).to.be.eq(true);
-        expect(promise.value()).to.match(/Activate email address/m);
+        expect(promise.value()).to.match(/change your password/m);
       });
   });
 });
