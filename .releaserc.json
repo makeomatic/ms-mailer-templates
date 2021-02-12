@@ -1,5 +1,8 @@
 {
-  "branch": "master",
+  "branches": [
+    { "name":  "master" },
+    { "name": "develop", "prerelease": "rc" }
+  ],
   "analyzeCommits": {
     "preset": "angular",
     "releaseRules": [
