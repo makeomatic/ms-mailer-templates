@@ -40,6 +40,26 @@ render('activate', { lng: 'de' })
   });
 ```
 
+### Translation helper
+
+Package exports a simple translation helper as a property of the default exports.
+
+```js
+render.translate(key, { lng, ...rest });
+```
+
+Where `key` is the key of the string to be translated, `lng` - target language, `rest` - other translation context options
+
+Usage example:
+
+```js
+const render = require('ms-mailer-templates');
+
+// returns translated string when translation is available 
+// for 'de' language and 'custom' namespace
+const txt = render.translate('custom:|Count {{count}}', { lng: 'de', count: 10 });
+```
+
 ### Guides
 
 To add i18n support for existing or new templates one must wrap strings to be translated into `t` handlebars helper.

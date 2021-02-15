@@ -24,7 +24,7 @@ fs.readdirSync(templateDirectory)
   });
 
 // public API
-module.exports = function renderEmailTemplate(templateName, context, opts = {}) {
+function renderEmailTemplate(templateName, context, opts = {}) {
   const template = templates[templateName];
   if (!template) {
     return Promise.reject(new Errors.NotFoundError(templateName));
@@ -47,4 +47,8 @@ module.exports = function renderEmailTemplate(templateName, context, opts = {}) 
       },
     });
   });
-};
+}
+
+renderEmailTemplate.translate = i18n.t.bind(i18n);
+
+module.exports = renderEmailTemplate;
