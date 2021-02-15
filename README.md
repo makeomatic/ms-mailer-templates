@@ -42,7 +42,7 @@ render('activate', { lng: 'de' })
 
 ### Translation helper
 
-Package exports a simple translation helper as a property of the default exports.
+Package exports a simple translation helper as a property of the default export.
 
 ```js
 render.translate(key, { lng, ...rest });
