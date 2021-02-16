@@ -129,27 +129,6 @@ following the `i18n/{{language}}{{namespace}}.json` filename template.
    │   ...
 ```
 
-### Cappasity
-
-Cappasity has its own [locize](https://www.locize.app) translation project. All the keys are stored under
-`cpst-emails` namespace.
-
-#### Upload fresh strings to locize
-
-Newly added strings must be [parsed](#Parsing) first and then uploaded to locize service with shell command:
-
-```shell
-LOCIZE_KEY=locize-api-key yarn i18n:save-missing:cpst
-```
-
-#### Update translations from locize
-
-Fresh translations from locize are updated with command:
-
-```shell
-yarn i18n:download:cpst
-```
-
 ## Existing templates
 
 ### General

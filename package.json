@@ -10,9 +10,7 @@
     "compile": "gulp production",
     "dev": "gulp watch",
     "semantic-release": "semantic-release",
-    "i18n:parse": "yarn i18next",
-    "i18n:download:cpst": "locize download --project-id 8b714524-7f1f-46bc-a926-c311294cb498 --namespace cpst-emails --format flat --ver latest --path ./i18n",
-    "i18n:save-missing:cpst": "if [[ -z \"${LOCIZE_KEY}\" ]]; then echo \"Provide valid project specific API key\"; exit 1; else locize save-missing --api-key ${LOCIZE_KEY} --project-id  8b714524-7f1f-46bc-a926-c311294cb498 --namespace cpst-emails --format flat --ver latest --path ./i18n-parsed; fi"
+    "i18n:parse": "yarn i18next"
   },
   "repository": {
     "type": "git",
