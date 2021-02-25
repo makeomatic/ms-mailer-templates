@@ -12,20 +12,6 @@ p {
   color: rgb(0, 0, 0);
 }
 
-.cappasity-hero {
-  color: rgb(0, 0, 0);
-  font-size: 24px;
-}
-
-.cappasity-accent {
-  color: rgb(74, 144, 226)
-}
-
-.cappasity-subtle {
-  font-size: 12px;
-  color: rgb(155, 155, 155);
-}
-
 .rfx-button {
   background-color: rgb(74, 144, 226);
   display: inline-block;

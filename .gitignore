@@ -35,3 +35,6 @@ lib
 
 # editors
 .idea/
+
+# i18n
+i18n-parsed/
