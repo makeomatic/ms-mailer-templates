@@ -9,7 +9,9 @@ const SUPPORTED_NAMESPACES = [
 ];
 
 module.exports = (function initI18n() {
-  i18next
+  const i18n = i18next.createInstance();
+
+  i18n
     .use(fsBackend)
     .init({
       initImmediate: false,
@@ -23,5 +25,5 @@ module.exports = (function initI18n() {
       },
     });
 
-  return i18next;
+  return i18n;
 }());
