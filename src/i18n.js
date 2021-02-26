@@ -17,6 +17,7 @@ module.exports = (function initI18n() {
       initImmediate: false,
       fallbackLng: 'en',
       nsSeparator: ':|',
+      keySeparator: false,
       ns: SUPPORTED_NAMESPACES,
       defaultNS: 'emails',
       preload: readdirSync(i18nPath).filter((fileName) => lstatSync(join(i18nPath, fileName)).isDirectory()),
