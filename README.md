@@ -150,6 +150,7 @@ following the `i18n/{{language}}{{namespace}}.json` filename template.
   1. `add-member-notify`
   1. `feedback`
   1. `registration-notify`
+  1. `password-reset`
 
 ## Roadmap
 
