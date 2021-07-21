@@ -85,3 +85,9 @@ h2 {
 td {
   vertical-align: inherit !important;
 }
+
+h1, .less-margin {
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+    text-align: center;
+}
