@@ -16,8 +16,7 @@ body {
 }
 
 .sl-logo {
-  width: 27px;
-  height: 30px;
+  width: 230px;
   margin-bottom: 12px;
 }
 
@@ -31,7 +30,7 @@ body {
 }
 
 .sl-button {
-  background-color: #3C8BFB;
+  background-color: #3c8bfb;
   text-decoration: none;
   padding: 17px 63px;
   color: white;
@@ -71,7 +70,7 @@ h1 {
   font-size: 20px !important;
   font-weight: bold !important;
   padding: 0 !important;
-  margin: 49px 0 30px 0!important;
+  margin: 49px 0 30px 0 !important;
 }
 
 h2 {
