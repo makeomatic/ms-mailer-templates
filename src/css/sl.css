@@ -32,7 +32,9 @@ body {
 .sl-button {
   background-color: #3c8bfb;
   text-decoration: none;
-  padding: 17px 63px;
+  max-width: 250px;
+  width: 100%;
+  padding: 17px 20px;
   color: white;
   font-size: 14px;
   font-weight: bold;
