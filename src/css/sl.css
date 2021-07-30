@@ -36,6 +36,7 @@ body {
   color: white;
   font-size: 14px;
   font-weight: bold;
+  display: inline-block;
 }
 
 .sl-button-row {
