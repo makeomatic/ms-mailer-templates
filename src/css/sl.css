@@ -1,93 +1,107 @@
 * {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 body {
-  -webkit-font-smoothing: antialiased;
-  -webkit-text-size-adjust: none;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: none;
+}
+
+.sl-body {
+    background: #F6F4F5;
+    margin-top: 0;
+}
+
+.sl-main {
+    margin: 0 auto;
+    background: #fff;
+    padding-top: 10px;
 }
 
 .main {
-  margin: 0 auto;
+    margin: 0 auto;
 }
 
 .logo-container {
-  text-align: center;
+    text-align: center;
 }
 
 .sl-logo {
-  width: 230px;
-  margin-bottom: 12px;
+    width: 230px;
+    margin-bottom: 12px;
 }
 
 .container {
-  margin: 0 auto;
-  background-color: white;
-  border-radius: 10px;
-  width: 100%;
-  max-width: 586px;
-  padding: 0 57px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 586px;
+    padding: 0 57px;
 }
 
 .sl-button {
-  background-color: #3c8bfb;
-  text-decoration: none;
-  max-width: 250px;
-  width: 100%;
-  padding: 17px 30px;
-  color: white;
-  font-size: 14px;
-  font-weight: bold;
-  display: inline-block;
+    background-color: #3c8bfb;
+    text-decoration: none;
+    max-width: 250px;
+    width: 100%;
+    padding: 17px 30px;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    display: inline-block;
 }
 
 .sl-button-row {
-  height: 51px;
-  margin-top: 32px !important;
-  margin-bottom: 38px !important;
-  text-align: center;
+    height: 51px;
+    margin-top: 32px !important;
+    margin-bottom: 38px !important;
+    text-align: center;
 }
 
 .sl-link {
-  text-decoration: none;
-  color: #1d7bff;
+    text-decoration: none;
+    color: #1d7bff;
 }
+
 .sl-text {
-  font-weight: 400 !important;
-  font-size: 14px !important;
-  line-height: 18px !important;
-  margin-bottom: 20px !important;
+    font-weight: 400 !important;
+    font-size: 14px !important;
+    line-height: 18px !important;
+    margin-bottom: 20px !important;
 }
 
 .sl-text_top {
-  margin-top: 38px !important;
-  margin-bottom: 20px;
+    margin-top: 38px !important;
+    margin-bottom: 20px;
 }
 
 .sl-text_bottom {
-  margin-bottom: 42px !important;
+    margin-bottom: 42px !important;
 }
+
 .sl-text-common {
-  font-weight: 400 !important;
-  font-size: 14px !important;
+    font-weight: 400 !important;
+    font-size: 14px !important;
 }
+
 h1 {
-  font-size: 20px !important;
-  font-weight: bold !important;
-  padding: 0 !important;
-  margin: 49px 0 30px 0 !important;
+    font-size: 20px !important;
+    font-weight: bold !important;
+    padding: 0 !important;
+    margin: 49px 0 30px 0 !important;
 }
 
 h2 {
-  font-size: 14px !important;
-  font-weight: bold !important;
-  padding: 0;
-  margin: 0;
-  margin-bottom: 40px !important;
+    font-size: 14px !important;
+    font-weight: bold !important;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 40px !important;
 }
 
 td {
-  vertical-align: inherit !important;
+    vertical-align: inherit !important;
 }
 
 h1, .centered {
