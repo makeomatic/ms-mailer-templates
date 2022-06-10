@@ -56,6 +56,6 @@
     "imagemin-pngcrush": "^7.0.0",
     "locize-cli": "^7.6.12",
     "mocha": "^8.2.1",
-    "semantic-release": "^17.3.0"
+    "semantic-release": "^19.0.3"
   }
 }
