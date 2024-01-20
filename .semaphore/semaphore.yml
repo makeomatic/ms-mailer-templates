@@ -21,7 +21,7 @@ global_job_config:
       - corepack install --global pnpm@8.x
       - checkout
       - cache restore node-$(checksum pnpm-lock.yaml)
-      - pnpm i --frozen-lockfile --prefer-offline --ignore-scripts
+      - pnpm i --frozen-lockfile --prefer-offline
       - cache store node-$(checksum pnpm-lock.yaml) $(pnpm store path)
 
 blocks:
