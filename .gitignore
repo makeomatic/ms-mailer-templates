@@ -38,3 +38,4 @@ lib
 
 # i18n
 i18n-parsed/
+.DS_Store

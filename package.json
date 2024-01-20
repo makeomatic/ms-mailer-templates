@@ -4,13 +4,13 @@
   "version": "0.0.0-development",
   "main": "./lib/index.js",
   "scripts": {
-    "prepublishOnly": "yarn compile && babel ./src -d ./lib",
-    "test": "yarn lint && yarn compile && NODE_ENV=test mocha",
+    "prepublishOnly": "pnpm compile && babel ./src -d ./lib",
+    "test": "pnpm lint && pnpm compile && NODE_ENV=test mocha",
     "lint": "eslint ./src",
     "compile": "gulp production",
     "dev": "gulp watch",
     "semantic-release": "semantic-release",
-    "i18n:parse": "yarn i18next"
+    "i18n:parse": "pnpm i18next"
   },
   "repository": {
     "type": "git",
@@ -26,36 +26,40 @@
     "bluebird": "^3.7.2",
     "common-errors": "^1.2.0",
     "handlebars": "^4.7.6",
-    "i18next": "^19.8.7",
-    "i18next-fs-backend": "^1.0.8"
+    "i18next": "^23.7.17",
+    "i18next-fs-backend": "^2.3.1"
   },
   "devDependencies": {
     "@babel/cli": "^7.12.7",
     "@babel/core": "^7.12.7",
-    "@babel/plugin-proposal-class-properties": "^7.12.1",
+    "@babel/plugin-proposal-class-properties": "^7.18.6",
     "@babel/plugin-transform-strict-mode": "^7.12.1",
     "@babel/preset-env": "^7.12.7",
-    "babel-eslint": "^10.1.0",
     "chai": "^4.1.2",
-    "datauri": "^3.0.0",
+    "datauri": "^4.1.0",
     "del": "^6.0.0",
-    "eslint": "7.14.0",
-    "eslint-config-makeomatic": "^5.0.3",
+    "eslint": "8.56.0",
+    "eslint-config-makeomatic": "^6.0.0",
     "eslint-plugin-import": "^2.22.1",
-    "eslint-plugin-mocha": "^8.0.0",
-    "eslint-plugin-unicorn": "^23.0.0",
+    "eslint-plugin-mocha": "^10.2.0",
+    "eslint-plugin-unicorn": "^50.0.1",
     "gulp": "^4.0.2",
     "gulp-cli": "^2.3.0",
     "gulp-connect": "^5.5.0",
     "gulp-htmlmin": "^5.0.1",
-    "gulp-imagemin": "^7.1.0",
+    "gulp-imagemin": "^9.0.0",
     "gulp-inline-css": "^4.0.0",
     "gulp-inline-source": "^4.0.0",
-    "gulp-preprocess": "^3.0.3",
-    "i18next-parser": "^3.6.0",
+    "gulp-preprocess": "^4.0.2",
+    "i18next-parser": "^8.12.0",
     "imagemin-pngcrush": "^7.0.0",
-    "locize-cli": "^7.6.12",
-    "mocha": "^8.2.1",
-    "semantic-release": "^17.3.0"
-  }
+    "locize-cli": "^8.0.0",
+    "mocha": "^10.2.0",
+    "semantic-release": "^23.0.0"
+  },
+  "files": [
+    "build/",
+    "i18n",
+    "lib/"
+  ]
 }

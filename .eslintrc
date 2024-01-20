@@ -1,9 +1,11 @@
 {
   "extends": "makeomatic",
-  "parser": "babel-eslint",
   "plugins": [
     "mocha"
   ],
+  "parserOptions": {
+    "ecmaVersion": "latest"
+  },
   "env": {
     "mocha": true
   },
